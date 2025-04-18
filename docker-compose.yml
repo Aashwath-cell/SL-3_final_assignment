@@ -1,5 +1,6 @@
 services:
   flask_app:
+    image: aashwath05/flask_app:latest
     build: 
       context: ./flask_app
       dockerfile: Dockerfile
@@ -14,6 +15,7 @@ services:
     restart: unless-stopped
 
   django_app:
+    image: aashwath05/django_app:latest
     build:
       context: ./django_app
       dockerfile: Dockerfile
